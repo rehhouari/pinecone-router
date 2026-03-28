@@ -2,8 +2,8 @@
 
 Thanks for considering to contribute to Pinecone Router!
 
-Please open [issues](https://github.com/pinecone-router/router/issues) or
-[discussions](https://github.com/pinecone-router/router/discussions) about
+Please open [issues](https://github.com/rehhouari/pinecone-router/issues) or
+[discussions](https://github.com/rehhouari/pinecone-router/discussions) about
 any problems, suggestions, or questions you have!
 
 Want to contribute to code? please do!

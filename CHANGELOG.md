@@ -87,14 +87,14 @@ and this project adheres to
 ### Fixed
 
 - Fixed basePath not added to history path
-  ([#76](https://github.com/pinecone-router/router/issues/76))
+  ([#76](https://github.com/rehhouari/pinecone-router/issues/76))
 
 ## [7.1.2] - 2025-06-03
 
 ### Fixed
 
 - Fixed context.path includes query params after navigate() is called
-  [#73](https://github.com/pinecone-router/router/issues/73)
+  [#73](https://github.com/rehhouari/pinecone-router/issues/73)
 
 ## [7.1.0] - 2025-05-10
 
@@ -102,7 +102,7 @@ and this project adheres to
 
 - Added `Settings.fetchOptions` property as an object to be passed to every
   template fetch request including preloads.
-  (Addresses [#72](https://github.com/pinecone-router/router/issues/72))
+  (Addresses [#72](https://github.com/rehhouari/pinecone-router/issues/72))
 
 ## [7.0.3] - 2025-04-24
 
@@ -270,12 +270,12 @@ For a more concise upgrade guide, [look here](./upgrade_to_v7.md)
   adding a unique `id` to the template elements.
 - Fixed a bug where x-effect/$watch callback inside a template still
   run after the route changes due to the global context updating prematurely
-  (fix [#62](https://github.com/pinecone-router/router/issues/62)).
+  (fix [#62](https://github.com/rehhouari/pinecone-router/issues/62)).
 - Fixed browser back and forth navigation not always always work
-  ([#16](https://github.com/pinecone-router/router/issues/16))
+  ([#16](https://github.com/rehhouari/pinecone-router/issues/16))
 - Fixed query being used as part of the path on initial load.
 - Fixed Context.path being empty on init
-  (fixes [#67](https://github.com/pinecone-router/router/issues/67)).
+  (fixes [#67](https://github.com/rehhouari/pinecone-router/issues/67)).
 
 ## [6.2.5] - 2025-04-11
 
@@ -283,7 +283,7 @@ For a more concise upgrade guide, [look here](./upgrade_to_v7.md)
 
 - Fixed query being read as part of the path on first page load.
 - Fixed empty path on init
-  (fix [#67](https://github.com/pinecone-router/router/issues/67))
+  (fix [#67](https://github.com/rehhouari/pinecone-router/issues/67))
 
 ## [6.2.4] - 2025-03-20
 
@@ -322,7 +322,7 @@ For a more concise upgrade guide, [look here](./upgrade_to_v7.md)
 ### Added
 
 - Added support for `<script>` tags inside templates
-  ([see docs](https://github.com/pinecone-router/router/blob/6.1.0/README.md#embeded-scripts)).
+  ([see docs](https://github.com/rehhouari/pinecone-router/blob/6.1.0/README.md#embeded-scripts)).
 
 ## [6.0.0] - 2025-02-21
 
@@ -756,72 +756,72 @@ It's mostly backward compatible but need a few tweaks:
 
 - Let go of multi-router support for simpler codebase.
 
-[unreleased]: https://github.com/pinecone-router/router/compare/7.5.0...HEAD
-[0.0.3]: https://github.com/pinecone-router/router/compare/0.0.2...0.0.3
-[0.0.4]: https://github.com/pinecone-router/router/compare/0.0.3...0.0.4
-[0.0.5]: https://github.com/pinecone-router/router/compare/0.0.4...0.0.5
-[0.0.6]: https://github.com/pinecone-router/router/compare/0.0.5...0.0.6
-[0.0.7]: https://github.com/pinecone-router/router/compare/0.0.6...0.0.7
-[0.0.8]: https://github.com/pinecone-router/router/compare/0.0.7...0.0.8
-[0.0.9]: https://github.com/pinecone-router/router/compare/0.0.8...0.0.9
-[0.1.0]: https://github.com/pinecone-router/router/compare/0.0.9...0.1.0
-[0.1.1]: https://github.com/pinecone-router/router/compare/0.1.0...0.1.1
-[0.1.2]: https://github.com/pinecone-router/router/compare/0.1.1...0.1.2
-[0.3.0]: https://github.com/pinecone-router/router/compare/0.1.2...0.3.0
-[0.3.1]: https://github.com/pinecone-router/router/compare/0.3.0...0.3.1
-[1.0.0]: https://github.com/pinecone-router/router/compare/0.3.1...1.0.0
-[1.0.1]: https://github.com/pinecone-router/router/compare/1.0.0...1.0.1
-[1.0.2]: https://github.com/pinecone-router/router/compare/1.0.1...1.0.2
-[1.0.3]: https://github.com/pinecone-router/router/compare/1.0.2...1.0.3
-[1.0.3]: https://github.com/pinecone-router/router/compare/1.0.2...1.0.3
-[1.0.4]: https://github.com/pinecone-router/router/compare/1.0.3...1.0.4
-[2.0.0]: https://github.com/pinecone-router/router/compare/1.0.4...2.0.0
-[2.1.2]: https://github.com/pinecone-router/router/compare/2.0.0...2.1.2
-[2.1.3]: https://github.com/pinecone-router/router/compare/2.1.2...2.1.3
-[3.0.0]: https://github.com/pinecone-router/router/compare/2.1.3...3.0.0
-[3.0.1]: https://github.com/pinecone-router/router/compare/3.0.0...3.0.1
-[3.1.0]: https://github.com/pinecone-router/router/compare/3.0.1...3.1.0
-[3.1.1]: https://github.com/pinecone-router/router/compare/3.1.0...3.1.1
-[3.1.2]: https://github.com/pinecone-router/router/compare/3.1.1...3.1.2
-[4.0.0]: https://github.com/pinecone-router/router/compare/3.1.2...4.0.0
-[4.0.1]: https://github.com/pinecone-router/router/compare/4.0.0...4.0.1
-[4.0.2]: https://github.com/pinecone-router/router/compare/4.0.1...4.0.2
-[4.0.3]: https://github.com/pinecone-router/router/compare/4.0.2...4.0.3
-[4.1.0]: https://github.com/pinecone-router/router/compare/4.0.3...4.1.0
-[4.1.1]: https://github.com/pinecone-router/router/compare/4.1.0...4.1.1
-[4.2.0]: https://github.com/pinecone-router/router/compare/4.1.1...4.2.0
-[4.3.0]: https://github.com/pinecone-router/router/compare/4.2.0...4.3.0
-[4.3.1]: https://github.com/pinecone-router/router/compare/4.3.0...4.3.1
-[4.3.1]: https://github.com/pinecone-router/router/compare/4.3.0...4.3.1
-[4.3.2]: https://github.com/pinecone-router/router/compare/4.3.1...4.3.2
-[4.4.0]: https://github.com/pinecone-router/router/compare/4.3.2...4.4.0
-[4.4.1]: https://github.com/pinecone-router/router/compare/4.4.0...4.4.1
-[5.0.0]: https://github.com/pinecone-router/router/compare/4.4.1...5.0.0
-[5.1.0]: https://github.com/pinecone-router/router/compare/5.0.0...5.1.0
-[5.2.0]: https://github.com/pinecone-router/router/compare/5.1.0...5.2.0
-[5.2.1]: https://github.com/pinecone-router/router/compare/5.2.0...5.2.1
-[5.2.2]: https://github.com/pinecone-router/router/compare/5.2.1...5.2.2
-[5.3.0]: https://github.com/pinecone-router/router/compare/5.2.2...5.3.0
-[5.4.0]: https://github.com/pinecone-router/router/compare/5.3.0...5.4.0
-[5.5.0]: https://github.com/pinecone-router/router/compare/5.4.0...5.5.0
-[6.0.0]: https://github.com/pinecone-router/router/compare/5.5.0...6.0.0
-[6.1.0]: https://github.com/pinecone-router/router/compare/6.0.0...6.1.0
-[6.2.0]: https://github.com/pinecone-router/router/compare/6.1.0...6.2.0
-[6.2.1]: https://github.com/pinecone-router/router/compare/6.2.0...6.2.1
-[6.2.2]: https://github.com/pinecone-router/router/compare/6.2.1...6.2.2
-[6.2.3]: https://github.com/pinecone-router/router/compare/6.2.2...6.2.3
-[6.2.4]: https://github.com/pinecone-router/router/compare/6.2.3...6.2.4
-[6.2.5]: https://github.com/pinecone-router/router/compare/6.2.4...6.2.5
-[7.0.0]: https://github.com/pinecone-router/router/compare/6.2.5...7.0.0
-[7.0.1]: https://github.com/pinecone-router/router/compare/7.0.0...7.0.1
-[7.0.2]: https://github.com/pinecone-router/router/compare/7.0.1...7.0.2
-[7.0.3]: https://github.com/pinecone-router/router/compare/7.0.2...7.0.3
-[7.1.0]: https://github.com/pinecone-router/router/compare/7.0.3...7.1.0
-[7.1.2]: https://github.com/pinecone-router/router/compare/7.1.0...7.1.2
-[7.1.3]: https://github.com/pinecone-router/router/compare/7.1.2...7.1.3
-[7.2.0]: https://github.com/pinecone-router/router/compare/7.1.3...7.2.0
-[7.3.0]: https://github.com/pinecone-router/router/compare/7.2.0...7.3.0
-[7.3.1]: https://github.com/pinecone-router/router/compare/7.3.0...7.3.1
-[7.4.0]: https://github.com/pinecone-router/router/compare/7.3.1...7.4.0
-[7.4.1]: https://github.com/pinecone-router/router/compare/7.4.0...7.4.1
-[7.5.0]: https://github.com/pinecone-router/router/compare/7.4.1...7.5.0
+[unreleased]: https://github.com/rehhouari/pinecone-router/compare/7.5.0...HEAD
+[0.0.3]: https://github.com/rehhouari/pinecone-router/compare/0.0.2...0.0.3
+[0.0.4]: https://github.com/rehhouari/pinecone-router/compare/0.0.3...0.0.4
+[0.0.5]: https://github.com/rehhouari/pinecone-router/compare/0.0.4...0.0.5
+[0.0.6]: https://github.com/rehhouari/pinecone-router/compare/0.0.5...0.0.6
+[0.0.7]: https://github.com/rehhouari/pinecone-router/compare/0.0.6...0.0.7
+[0.0.8]: https://github.com/rehhouari/pinecone-router/compare/0.0.7...0.0.8
+[0.0.9]: https://github.com/rehhouari/pinecone-router/compare/0.0.8...0.0.9
+[0.1.0]: https://github.com/rehhouari/pinecone-router/compare/0.0.9...0.1.0
+[0.1.1]: https://github.com/rehhouari/pinecone-router/compare/0.1.0...0.1.1
+[0.1.2]: https://github.com/rehhouari/pinecone-router/compare/0.1.1...0.1.2
+[0.3.0]: https://github.com/rehhouari/pinecone-router/compare/0.1.2...0.3.0
+[0.3.1]: https://github.com/rehhouari/pinecone-router/compare/0.3.0...0.3.1
+[1.0.0]: https://github.com/rehhouari/pinecone-router/compare/0.3.1...1.0.0
+[1.0.1]: https://github.com/rehhouari/pinecone-router/compare/1.0.0...1.0.1
+[1.0.2]: https://github.com/rehhouari/pinecone-router/compare/1.0.1...1.0.2
+[1.0.3]: https://github.com/rehhouari/pinecone-router/compare/1.0.2...1.0.3
+[1.0.3]: https://github.com/rehhouari/pinecone-router/compare/1.0.2...1.0.3
+[1.0.4]: https://github.com/rehhouari/pinecone-router/compare/1.0.3...1.0.4
+[2.0.0]: https://github.com/rehhouari/pinecone-router/compare/1.0.4...2.0.0
+[2.1.2]: https://github.com/rehhouari/pinecone-router/compare/2.0.0...2.1.2
+[2.1.3]: https://github.com/rehhouari/pinecone-router/compare/2.1.2...2.1.3
+[3.0.0]: https://github.com/rehhouari/pinecone-router/compare/2.1.3...3.0.0
+[3.0.1]: https://github.com/rehhouari/pinecone-router/compare/3.0.0...3.0.1
+[3.1.0]: https://github.com/rehhouari/pinecone-router/compare/3.0.1...3.1.0
+[3.1.1]: https://github.com/rehhouari/pinecone-router/compare/3.1.0...3.1.1
+[3.1.2]: https://github.com/rehhouari/pinecone-router/compare/3.1.1...3.1.2
+[4.0.0]: https://github.com/rehhouari/pinecone-router/compare/3.1.2...4.0.0
+[4.0.1]: https://github.com/rehhouari/pinecone-router/compare/4.0.0...4.0.1
+[4.0.2]: https://github.com/rehhouari/pinecone-router/compare/4.0.1...4.0.2
+[4.0.3]: https://github.com/rehhouari/pinecone-router/compare/4.0.2...4.0.3
+[4.1.0]: https://github.com/rehhouari/pinecone-router/compare/4.0.3...4.1.0
+[4.1.1]: https://github.com/rehhouari/pinecone-router/compare/4.1.0...4.1.1
+[4.2.0]: https://github.com/rehhouari/pinecone-router/compare/4.1.1...4.2.0
+[4.3.0]: https://github.com/rehhouari/pinecone-router/compare/4.2.0...4.3.0
+[4.3.1]: https://github.com/rehhouari/pinecone-router/compare/4.3.0...4.3.1
+[4.3.1]: https://github.com/rehhouari/pinecone-router/compare/4.3.0...4.3.1
+[4.3.2]: https://github.com/rehhouari/pinecone-router/compare/4.3.1...4.3.2
+[4.4.0]: https://github.com/rehhouari/pinecone-router/compare/4.3.2...4.4.0
+[4.4.1]: https://github.com/rehhouari/pinecone-router/compare/4.4.0...4.4.1
+[5.0.0]: https://github.com/rehhouari/pinecone-router/compare/4.4.1...5.0.0
+[5.1.0]: https://github.com/rehhouari/pinecone-router/compare/5.0.0...5.1.0
+[5.2.0]: https://github.com/rehhouari/pinecone-router/compare/5.1.0...5.2.0
+[5.2.1]: https://github.com/rehhouari/pinecone-router/compare/5.2.0...5.2.1
+[5.2.2]: https://github.com/rehhouari/pinecone-router/compare/5.2.1...5.2.2
+[5.3.0]: https://github.com/rehhouari/pinecone-router/compare/5.2.2...5.3.0
+[5.4.0]: https://github.com/rehhouari/pinecone-router/compare/5.3.0...5.4.0
+[5.5.0]: https://github.com/rehhouari/pinecone-router/compare/5.4.0...5.5.0
+[6.0.0]: https://github.com/rehhouari/pinecone-router/compare/5.5.0...6.0.0
+[6.1.0]: https://github.com/rehhouari/pinecone-router/compare/6.0.0...6.1.0
+[6.2.0]: https://github.com/rehhouari/pinecone-router/compare/6.1.0...6.2.0
+[6.2.1]: https://github.com/rehhouari/pinecone-router/compare/6.2.0...6.2.1
+[6.2.2]: https://github.com/rehhouari/pinecone-router/compare/6.2.1...6.2.2
+[6.2.3]: https://github.com/rehhouari/pinecone-router/compare/6.2.2...6.2.3
+[6.2.4]: https://github.com/rehhouari/pinecone-router/compare/6.2.3...6.2.4
+[6.2.5]: https://github.com/rehhouari/pinecone-router/compare/6.2.4...6.2.5
+[7.0.0]: https://github.com/rehhouari/pinecone-router/compare/6.2.5...7.0.0
+[7.0.1]: https://github.com/rehhouari/pinecone-router/compare/7.0.0...7.0.1
+[7.0.2]: https://github.com/rehhouari/pinecone-router/compare/7.0.1...7.0.2
+[7.0.3]: https://github.com/rehhouari/pinecone-router/compare/7.0.2...7.0.3
+[7.1.0]: https://github.com/rehhouari/pinecone-router/compare/7.0.3...7.1.0
+[7.1.2]: https://github.com/rehhouari/pinecone-router/compare/7.1.0...7.1.2
+[7.1.3]: https://github.com/rehhouari/pinecone-router/compare/7.1.2...7.1.3
+[7.2.0]: https://github.com/rehhouari/pinecone-router/compare/7.1.3...7.2.0
+[7.3.0]: https://github.com/rehhouari/pinecone-router/compare/7.2.0...7.3.0
+[7.3.1]: https://github.com/rehhouari/pinecone-router/compare/7.3.0...7.3.1
+[7.4.0]: https://github.com/rehhouari/pinecone-router/compare/7.3.1...7.4.0
+[7.4.1]: https://github.com/rehhouari/pinecone-router/compare/7.4.0...7.4.1
+[7.5.0]: https://github.com/rehhouari/pinecone-router/compare/7.4.1...7.5.0

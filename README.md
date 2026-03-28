@@ -1,16 +1,16 @@
 <p align="center">
-  <img src="http://github.com/pinecone-router/router/raw/v7/.github/pinecone-router-social-card-alt-dark.png?raw=true" title="Pinecone Router logo with the text: The feature-packed router for
+  <img src="http://github.com/rehhouari/pinecone-router/raw/v7/.github/pinecone-router-social-card-alt-dark.png?raw=true" title="Pinecone Router logo with the text: The feature-packed router for
    Alpine.js.">
 </p>
 
 <div align="center" style="">
 
 [![npm](https://img.shields.io/npm/dm/pinecone-router?label=npm&logo=npm&labelColor=%23d7f4ee&color=%230b2822&style=flat&logoColor=%230b2822)](https://npmjs.com/package/pinecone-router)
-![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/pinecone-router?style=flat&logo=jsdelivr&logoColor=%230b2822&label=jsdelivr&labelColor=d7f4ee&color=%230b2822)
+rehhouari/pinecone-router[jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/pinecone-router?style=flat&logo=jsdelivr&logoColor=%230b2822&label=jsdelivr&labelColor=d7f4ee&color=%230b2822)
 [![npm bundle size](https://img.shields.io/bundlephobia/minzip/pinecone-router@7.5.0?labelColor=%23d7f4ee&style=flat&color=%230b2822&&logo=bun&logoColor=%230b2822)](https://bundlephobia.com/result?p=pinecone-router@7.5.0)
 <br>
 [![Changelog](https://img.shields.io/badge/changelog-0b2822?style=flat)](./CHANGELOG.md)
-[![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/pinecone-router/router?labelColor=%23d7f4ee&color=%230b2822&label=version&style=flat&sort=semver&logo=semver&logoColor=%230b2822)](https://github.com/pinecone-router/router/tree/7.5.0)
+[![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/rehhouari/pinecone-router?labelColor=%23d7f4ee&color=%230b2822&label=version&style=flat&sort=semver&logo=semver&logoColor=%230b2822)](https://github.com/rehhouari/pinecone-router/tree/7.5.0)
 [![Sponsor](https://img.shields.io/badge/sponsor-0b2822?logo=githubsponsors&style=flat)](https://ko-fi.com/rehhouari)
 
 </div>
@@ -1068,7 +1068,7 @@ Copyright (c) 2021-2025 Rafik El Hadi Houari and contributors
 
 Licensed under the MIT license, see [LICENSE.md](LICENSE.md) for details.
 
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/StillImage" property="dct:title" rel="dct:type">Pinecone Router <a href="https://github.com/pinecone-router/logo">Logo</a></span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://rehhouari.eu.org" property="cc:attributionName" rel="cc:attributionURL">Rafik El Hadi Houari</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/StillImage" property="dct:title" rel="dct:type">Pinecone Router <a href="https://github.com/rehhouari/pinecone-router-logo">Logo</a></span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/rehhouari" property="cc:attributionName" rel="cc:attributionURL">Rafik El Hadi Houari</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 
 > Code from [Page.js](https://github.com/visionmedia/page.js#license) is licensed under the MIT License.
 > Copyright (c) 2012 TJ Holowaychuk <tj@vision-media.ca>

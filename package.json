@@ -4,7 +4,7 @@
 	"author": "Rafik El Hadi Houari <rehhouari@gmail.com>",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/pinecone-router/router"
+		"url": "https://github.com/rehhouari/pinecone-router"
 	},
 	"description": "The feature-packed router for Alpine.js.",
 	"keywords": [
