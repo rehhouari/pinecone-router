@@ -68,7 +68,7 @@ A small, easy to use, and feature-packed router for Alpine.js.
 
 ## Installation
 
-This projects follow the [Semantic Versioning](https://semver.org/) gui=delines.
+This projects follow the [Semantic Versioning](https://semver.org/) guidelines.
 
 > [!IMPORTANT]
 > Check the [CHANGELOG](./CHANGELOG.md) before major updates.
