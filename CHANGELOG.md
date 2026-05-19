@@ -8,6 +8,13 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [7.5.1] - 2026-05-19
+
+### Fixed
+
+- Links with any URL scheme (http:, tel:, mailto:, etc) will no longer be
+  handled by the router. (Fixes #86).
+
 ## [7.5.0] - 2026-01-31
 
 ### Added
@@ -825,3 +832,4 @@ It's mostly backward compatible but need a few tweaks:
 [7.4.0]: https://github.com/rehhouari/pinecone-router/compare/7.3.1...7.4.0
 [7.4.1]: https://github.com/rehhouari/pinecone-router/compare/7.4.0...7.4.1
 [7.5.0]: https://github.com/rehhouari/pinecone-router/compare/7.4.1...7.5.0
+[7.5.1]: https://github.com/rehhouari/pinecone-router/compare/7.5.0...7.5.1

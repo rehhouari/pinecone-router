@@ -36,6 +36,9 @@ export const handleClicks = (Router: PineconeRouter) => {
 
 		// only handle internal links without special targets
 		if (href && (!target || /^_?self$/i.test(target))) {
+			// if the link contains a url scheme (such as http:, tel:, mailto:, etc)
+			// return without handling it
+			if (/^[a-zA-Z][a-zA-Z0-9+\-.]*:/.test(href)) return
 			Router.navigate(href)
 			e.preventDefault()
 		}

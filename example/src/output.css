@@ -1,4 +1,4 @@
-/*! tailwindcss v4.1.18 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v4.3.0 | MIT License | https://tailwindcss.com */
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -229,9 +229,6 @@
   .rounded-3xl {
     border-radius: var(--radius-3xl);
   }
-  .bg-\[\#0b2822\] {
-    background-color: #0b2822;
-  }
   .bg-brand {
     background-color: var(--color-brand);
   }
@@ -301,6 +298,7 @@
 body {
   background-color: var(--color-brand);
   padding: calc(var(--spacing) * 3);
+  font-family: sans-serif;
 }
 #title {
   margin-bottom: calc(var(--spacing) * 6);

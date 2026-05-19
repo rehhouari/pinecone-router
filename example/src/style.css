@@ -10,6 +10,7 @@
 
 body {
 	@apply bg-brand p-3;
+	font-family: sans-serif
 }
 
 #title {
