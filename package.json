@@ -1,44 +1,44 @@
 {
-	"name": "pinecone-router",
-	"version": "7.5.1",
-	"author": "Rafik El Hadi Houari <rehhouari@gmail.com>",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/rehhouari/pinecone-router"
-	},
-	"description": "The feature-packed router for Alpine.js.",
-	"keywords": [
-		"alpinejs-router",
-		"alpine router",
-		"alpine.js router",
-		"alpinejs",
-		"alpine",
-		"Alpine JS",
-		"Alpine JS Plugin",
-		"Alpine JS Plugins",
-		"router",
-		"history",
-		"pushstate"
-	],
-	"license": "MIT",
-	"scripts": {
-		"dist": "bun run build-tsc && bun run build-esm && bun run build-cdn",
-		"build-cdn": "bun build builds/cdn.js --minify --sourcemap=\"linked\" --entry-naming=\"router.min.[ext]\" --format \"iife\" --outdir=\"./dist\"",
-		"build-esm": "bun build builds/module.js --minify --sourcemap=\"linked\" --entry-naming=\"router.esm.[ext]\" --format \"esm\" --outdir=\"./dist\"",
-		"build-tsc": "tsc  --project tsconfig.json",
-		"example": "cd example && bun dev"
-	},
-	"type": "module",
-	"types": "dist/types.d.ts",
-	"main": "dist/router.min.js",
-	"module": "dist/router.esm.js",
-	"umd:main": "dist/router.min.js",
-	"devDependencies": {
-		"@happy-dom/global-registrator": "^17.4.4",
-		"@types/alpinejs": "^3.13.11",
-		"@types/bun": "^1.2.5",
-		"alpinejs": "^3.14.9",
-		"prettier": "^3.5.3",
-		"typescript": "^5"
-	},
+  "name": "pinecone-router",
+  "version": "7.5.1",
+  "author": "Rafik El Hadi Houari <rehhouari@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rehhouari/pinecone-router"
+  },
+  "description": "The feature-packed router for Alpine.js.",
+  "keywords": [
+    "alpinejs-router",
+    "alpine router",
+    "alpine.js router",
+    "alpinejs",
+    "alpine",
+    "Alpine JS",
+    "Alpine JS Plugin",
+    "Alpine JS Plugins",
+    "router",
+    "history",
+    "pushstate"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "dist": "bun run build-tsc && bun run build-esm && bun run build-cdn",
+    "build-cdn": "bun build builds/cdn.js --minify --sourcemap=\"linked\" --entry-naming=\"router.min.[ext]\" --format \"iife\" --outdir=\"./dist\"",
+    "build-esm": "bun build builds/module.js --minify --sourcemap=\"linked\" --entry-naming=\"router.esm.[ext]\" --format \"esm\" --outdir=\"./dist\"",
+    "build-tsc": "tsc  --project tsconfig.json",
+    "example": "cd example && bun dev"
+  },
+  "type": "module",
+  "types": "dist/types.d.ts",
+  "main": "dist/router.min.js",
+  "module": "dist/router.esm.js",
+  "umd:main": "dist/router.min.js",
+  "devDependencies": {
+    "@happy-dom/global-registrator": "^17.4.4",
+    "@types/alpinejs": "^3.13.11",
+    "@types/bun": "^1.2.5",
+    "alpinejs": "^3.14.9",
+    "prettier": "^3.5.3",
+    "typescript": "^5"
+  }
 }
