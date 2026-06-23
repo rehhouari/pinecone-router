@@ -19,6 +19,7 @@
 		/></a>
 		<div id="main">
 			<div>
+			  <button @click="$router.navigate('/handler/async/')">h</button>
 				<h1 id="title">Pinecone Router Usage Examples</h1>
 				<!-- <div x-show="$router.loading">Loading...</div> -->
 
@@ -248,10 +249,12 @@
 
 			// add loading bar
 			document.addEventListener('pinecone:start', () => {
-				NProgress.start();
+				NProgress.start()
+				console.log("pinecone::start");
 			});
 			document.addEventListener('pinecone:end', () => {
 				NProgress.done();
+				console.log("pinecone:end")
 			});
 			document.addEventListener('pinecone:fetch-error', (err) =>
 				console.error(err)

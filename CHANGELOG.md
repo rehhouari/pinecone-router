@@ -8,6 +8,13 @@ and this project adheres to
 
 ## [Unreleased]
 
+
+## [7.5.2] - 2026-06-23
+
+### Fixed
+
+- Fixed `pinecone:end` event not triggering (Fixes #87).
+
 ## [7.5.1] - 2026-05-19
 
 ### Fixed
@@ -763,7 +770,7 @@ It's mostly backward compatible but need a few tweaks:
 
 - Let go of multi-router support for simpler codebase.
 
-[unreleased]: https://github.com/rehhouari/pinecone-router/compare/7.5.0...HEAD
+[unreleased]: https://github.com/rehhouari/pinecone-router/compare/7.5.2...HEAD
 [0.0.3]: https://github.com/rehhouari/pinecone-router/compare/0.0.2...0.0.3
 [0.0.4]: https://github.com/rehhouari/pinecone-router/compare/0.0.3...0.0.4
 [0.0.5]: https://github.com/rehhouari/pinecone-router/compare/0.0.4...0.0.5
@@ -833,3 +840,4 @@ It's mostly backward compatible but need a few tweaks:
 [7.4.1]: https://github.com/rehhouari/pinecone-router/compare/7.4.0...7.4.1
 [7.5.0]: https://github.com/rehhouari/pinecone-router/compare/7.4.1...7.5.0
 [7.5.1]: https://github.com/rehhouari/pinecone-router/compare/7.5.0...7.5.1
+[7.5.2]: https://github.com/rehhouari/pinecone-router/compare/7.5.1...7.5.2
