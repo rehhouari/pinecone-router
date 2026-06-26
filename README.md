@@ -50,6 +50,8 @@ A small, easy to use, and feature-packed router for Alpine.js.
 
 ## Features:
 
+Pinecone Router has been updated with bug fixes and new features since 2021!
+
 - :smile: Easy and familiar syntax well integrated with Alpine.js.
 - :gear: [Handlers](#x-handler) allowing you to run functions on each
   route.
