@@ -19,7 +19,6 @@
 		/></a>
 		<div id="main">
 			<div>
-			  <button @click="$router.navigate('/handler/async/')">h</button>
 				<h1 id="title">Pinecone Router Usage Examples</h1>
 				<!-- <div x-show="$router.loading">Loading...</div> -->
 
@@ -187,6 +186,13 @@
 					if (ctx.params.name?.toLowerCase() == 'home') {
 						return this.$router.navigate('/');
 					}
+					// test catching errors inside handlers
+					// this will console.error(err)
+					// then dispatch a pinecone:handler-error event to document
+					if (ctx.params.name?.toLowerCase() == 'error') {
+						//throw new Error("test throw error")
+						undefined.foo
+					}
 				},
 
 				// async functions will be automatically awaited by Pinecone Router
@@ -256,9 +262,13 @@
 				NProgress.done();
 				console.log("pinecone:end")
 			});
-			document.addEventListener('pinecone:fetch-error', (err) =>
-				console.error(err)
+			document.addEventListener('pinecone:fetch-error', (event) =>
+				console.error(event.detail.error, event.detail.url)
 			);
+			document.addEventListener('pinecone:handler-error', (event) =>
+				console.error("error: ", event.detail.error, ". in handler: ", event.detail.handler, ". with ctx: ", event.detail.ctx)
+			);
+
 		</script>
 
 		<script type="module" src="/main"></script>

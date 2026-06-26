@@ -3,7 +3,7 @@ import createRoute, { type Route, type RouteOptions } from './route'
 import { settings, updateSettings, type Settings } from './settings'
 import { buildContext, type Context } from './context'
 import { addBasePath } from './utils'
-import { handle } from './handler'
+import { handle, HandlerError } from './handler'
 import { ROUTE_NOT_FOUND, ROUTE_EXISTS } from './errors'
 import { ElementWithXAttributes } from 'alpinejs'
 
@@ -104,7 +104,7 @@ export const createPineconeRouter = (
 
 		settings: (value) => updateSettings(value),
 
-		add: function (path, options) {
+		add: function(path, options) {
 			// check if the route was registered already
 			// but allow updating the notfound route
 			// this will make sure basePath is not added to routes when
@@ -140,19 +140,19 @@ export const createPineconeRouter = (
 			)
 		},
 
-		remove: function (path) {
+		remove: function(path) {
 			const route = this.routes.get(path)
 			// remove template element when removing the route
 			if (route?._template_element) {
 				const t = route._template_element
-				t._x_PineconeRouter_undoTemplate?.()
+				t._x_PineconeRouter_undoTemplate ?.()
 				t.remove()
 				route._template_element = undefined
 			}
 			return this.routes.delete(path)
 		},
 
-		navigate: async function (fullpath, fromPopState?, firstLoad?, index?) {
+		navigate: async function(fullpath, fromPopState?, firstLoad?, index?) {
 			// cancel any ongoing handlers
 			if (controller) {
 				controller.abort()
@@ -179,7 +179,14 @@ export const createPineconeRouter = (
 				// try catch promise reject from abort signal
 				try {
 					await handle(handlers, context, controller)
-				} catch (_) {
+				} catch (e) {
+					if (e) {
+						const err = e as HandlerError
+						console.error(err.error)
+						document.dispatchEvent(new CustomEvent('pinecone:handler-error', {
+							detail: err
+						}))
+					}
 					// promise rejected by abort signal
 					this.loading = false
 					return
@@ -204,7 +211,7 @@ export const createPineconeRouter = (
 			this.context = context
 		},
 
-		match: function (path: string) {
+		match: function(path: string) {
 			let route = this.routes.get('notfound')
 			let params = {}
 			for (let [_, r] of this.routes) {

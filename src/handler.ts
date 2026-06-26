@@ -12,6 +12,12 @@ export type Handler<In, Out> = (
 	controller: AbortController
 ) => Out | Promise<Out>
 
+export type HandlerError = {
+	error: String,
+	handler: Handler<unknown, unknown>,
+	ctx: Context
+}
+
 /**
  * HandlerContext is the context passed to the handler.
  * It contains the current route and the data from the previous handler.
@@ -47,8 +53,8 @@ export async function handle(
 			// abort signal.
 			try {
 				data = await handler(ctx, controller)
-			} catch (e) {
-				reject(e)
+				} catch (error) {
+				reject({error, handler, ctx})
 			}
 		}
 		resolve()

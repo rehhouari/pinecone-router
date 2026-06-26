@@ -8,6 +8,11 @@ import { Route } from './route';
  * @param Out is the return value of the handler.
  */
 export type Handler<In, Out> = (context: HandlerContext<In>, controller: AbortController) => Out | Promise<Out>;
+export type HandlerError = {
+    error: String;
+    handler: Handler<unknown, unknown>;
+    ctx: Context;
+};
 /**
  * HandlerContext is the context passed to the handler.
  * It contains the current route and the data from the previous handler.
